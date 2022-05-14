@@ -39,3 +39,4 @@ for class_name in class_names:
                 test = inserted_test,
                 score = randint(50,100)
             )
+            tests_result.save()
