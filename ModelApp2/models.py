@@ -27,8 +27,8 @@ class Tests(models.Model):
 
 class TestResults(models.Model):
     score = models.IntegerField()
-    student_id = models.ForeignKey('Students', on_delete=models.CASCADE)
-    test_id = models.ForeignKey('Tests', on_delete=models.CASCADE)
+    student = models.ForeignKey('Students', on_delete=models.CASCADE)
+    test = models.ForeignKey('Tests', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'test_results'
