@@ -1,8 +1,5 @@
 from math import radians
 import os
-from unicodedata import name
-
-from numpy import insert 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ModelExam2.settings')
 from django import setup
